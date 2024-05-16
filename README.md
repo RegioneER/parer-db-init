@@ -2,31 +2,36 @@
 
 Fonte template redazione documento:  https://www.makeareadme.com/.
 
-
 # Descrizione
 
-La seguente guida descrive i passaggi attraverso i quali è possibile importare o ripristinare i dump Oracle DB, con l'obbietivo di creare il modello E-R attraverso i seguenti schemi:
+La seguente guida descrive i passaggi attraverso i quali è possibile importare o ripristinare i dump Oracle DB contenti i modelli E-R utilizzati delle applicazioni ParER.
+Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi:
 
-- SACER (progetti di riferimento: [Sacer](https://github.com/RegioneER/parer-sacer) e [SacerWS](https://github.com/RegioneER/parer-sacerws))
-- SACER_IAM (progetto di riferimento [SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
-- SACER_LOG (progetto di riferimento [SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
-- SACER_PING (progetto di riferimento [Ping](https://github.com/RegioneER/parer-ping))
-- SACER_RIC (progetto di riferimento [Dips](https://github.com/RegioneER/parer-dips))
-- SACER_VERSO (progetto di riferimento [SacerIAM](https://github.com/RegioneER/parer-verso))
+- SACER ([Sacer](https://github.com/RegioneER/parer-sacer) e [SacerWS](https://github.com/RegioneER/parer-sacerws))
+- SACER_IAM ([SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
+- SACER_LOG ([SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
+- SACER_PING ([Ping](https://github.com/RegioneER/parer-ping))
+- SACER_RIC ([Dips](https://github.com/RegioneER/parer-dips))
+- SACER_VERSO ([SacerIAM](https://github.com/RegioneER/parer-verso))
 
-Al termine delle operazioni descritte in questo documento, verranno quindi creati gli schemi sopra elencati e un set di configurazioni al loro interno utili agli applicativi citati.
+## Pre requisito
+
+Al fine di estrarre i file .DUMP è scaricare di "7 zip" [https://www.7-zip.org/download.html](https://www.7-zip.org/download.html) con il quale estrarre i file originali.
+
 
 # Requisiti database
 
 - installazione **Oracle DB** alla versione consigliata **19c**;
-- la configurazin
 
 # Import / ripristino dump
 
 L'operazione di import / ripritino dei dump occorre eseguire i seguenti passaggi: 
 
-- TODO .... unzip file;
-- eseguire il seguente comando: 
+- estrazione dei file dump attraverso il tool [7z](https://www.7-zip.org/download.html) vedi [ora-dump/Oracle19c_dump.7z.001](ora-dump/Oracle19c_dump.7z.001);
+  
+  **Nota**: nella directory [ora-dump](ora-dump) sono presenti più file Oracle19c_dump.Zz.00*, per ottenere l'export dei file originali è sufficiente estrarre il file denominato [Oracle19c_dump.7z.001](ora-dump/Oracle19c_dump.7z.001), è automaticamente verranno estratti anche tutti gli altri
+
+- una volta estratti i file .DMP su apposita directory, eseguire il seguente comando: 
 
   ```
   impdp userid="'/ as sysdba'" Directory=<dir logica che mappa la cartella fisica dove si trova il dumpset>   dumpFile=PARERT03.IMRF153643.%u.DMP Parallel=4  Remap_Tablespace=%:<metti_il_nome_del_ts_in_cui_vuoi_fare_andare_i_dati>  
@@ -36,7 +41,7 @@ L'operazione di import / ripritino dei dump occorre eseguire i seguenti passaggi
     - omettere Remap_Tablespace se nel database Oracle di arrivo esistono già tutti i tablespace di cui il dump ha bisogno 
 
 
-Al termine saranno presenti i seguenti schemi sopra elencati su l'istanza OracleDB opportunamente predisposta:
+Al termine, su istanza OracleDB opportunamente predisposta, saranno presenti i seguenti schemi:
 
 - SACER;
 - SACER_IAM; 
