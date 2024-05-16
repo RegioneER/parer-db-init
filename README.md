@@ -11,8 +11,8 @@ Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi
 - SACER_IAM ([SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
 - SACER_LOG ([SacerIAM](https://github.com/RegioneER/parer-sacer-iam))
 - SACER_PING ([Ping](https://github.com/RegioneER/parer-ping))
-- SACER_RIC ([Dips](https://github.com/RegioneER/parer-dips))
-- SACER_VERSO ([SacerIAM](https://github.com/RegioneER/parer-verso))
+- SACER_RIC (applicazione non presente su GitHub per il momento)
+- SACER_VERSO ([Verso](https://github.com/RegioneER/parer-verso))
 
 ## Pre requisito
 
