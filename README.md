@@ -34,7 +34,7 @@ L'operazione di import / ripritino dei dump occorre eseguire i seguenti passaggi
 - una volta estratti i file .DMP su apposita directory, eseguire il seguente comando: 
 
   ```
-  impdp userid="'/ as sysdba'" Directory=<dir logica che mappa la cartella fisica dove si trova il dumpset>   dumpFile=PARERT03.IMRF153643.%u.DMP Parallel=4  Remap_Tablespace=%:<metti_il_nome_del_ts_in_cui_vuoi_fare_andare_i_dati>  
+  impdp userid="'/ as sysdba'" Directory=<dir logica che mappa la cartella fisica dove si trova il dumpset>   dumpFile=Oracle19c_dump.%u.DMP Parallel=4  Remap_Tablespace=%:<metti_il_nome_del_ts_in_cui_vuoi_fare_andare_i_dati>  
   ```
   Opzionalmente:  
     - exclude=USER se i vari schemi sono già presenti nel DB di arrivo
