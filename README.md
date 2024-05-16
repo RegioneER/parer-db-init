@@ -71,7 +71,7 @@ Questo progetto è rilasciato sotto licenza GNU Affero General Public License v3
 
 ## Documentazione aggiuntiva
 
-Alcuni riferimenti:
+Tool utilizzati: 
 
-* Sito ParER: https://poloarchivistico.regione.emilia-romagna.it/
-* Manuale di conservazione: https://poloarchivistico.regione.emilia-romagna.it/documentazione/documenti_open/manualeconservazione_v5-0.pdf/@@download/file/ManualeConservazione_v2.0.pdf 
+* 7 zip: https://www.7-zip.org/download.html/
+* Oracle DB : https://www.oracle.com/it/database/
