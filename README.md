@@ -10,8 +10,8 @@ Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi
 - SACER ([Sacer 9.3.0](https://github.com/RegioneER/parer-sacer/releases/tag/sacer-jboss-9.3.0) e [SacerWS 5.2.0](https://github.com/RegioneER/parer-sacerws/releases/tag/sacerws-5.2.0))
 - SACER_IAM ([SacerIAM 5.2.0](https://github.com/RegioneER/parer-sacer-iam/releases/tag/saceriam-jboss-5.2.0))
 - SACER_LOG ([SacerIAM 5.2.0](https://github.com/RegioneER/parer-sacer-iam/releases/tag/saceriam-jboss-5.2.0))
-- SACER_PING ([Ping](https://github.com/RegioneER/parer-ping))
-- SACER_RIC (applicazione non presente su GitHub per il momento)
+- SACER_PING (progetto non ancora pubblicato su GitHub)
+- SACER_RIC (progetto non ancora pubblicato su GitHub)
 - SACER_VERSO ([Verso 2.0.0](https://github.com/RegioneER/parer-verso/releases/tag/verso-jboss-2.0.0))
 
 Consulatare il [CHANGELOG.md](CHANGELOG.md) per verificare le successive evoluzioni legate alla pubblicazione delle nuove versioni delle applicazioni ParER.
