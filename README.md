@@ -14,6 +14,8 @@ Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi
 - SACER_RIC (applicazione non presente su GitHub per il momento)
 - SACER_VERSO ([Verso 2.0.0](https://github.com/RegioneER/parer-verso/releases/tag/verso-jboss-2.0.0))
 
+Consulatare il [CHANGELOG.md](CHANGELOG.md) per verificare le successive evoluzioni legate alla pubblicazione delle nuove versioni delle applicazioni ParER.
+
 ## Pre requisito
 
 Al fine di estrarre i file .DUMP è scaricare di "7 zip" [https://www.7-zip.org/download.html](https://www.7-zip.org/download.html) con il quale estrarre i file originali.
