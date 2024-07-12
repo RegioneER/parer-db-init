@@ -4,7 +4,7 @@ Fonte template redazione documento:  https://www.makeareadme.com/.
 
 # Descrizione
 
-La seguente guida descrive i passaggi attraverso i quali è possibile importare o ripristinare i dump Oracle DB contenti i modelli E-R utilizzati delle applicazioni ParER.
+La seguente guida descrive i passaggi attraverso i quali è possibile importare o ripristinare i dump Oracle DB contenti i modelli E-R utilizzati delle applicazioni ParER alla versioni indicate.
 Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi:
 
 - SACER ([Sacer 9.3.0](https://github.com/RegioneER/parer-sacer/releases/tag/sacer-jboss-9.3.0) e [SacerWS 5.2.0](https://github.com/RegioneER/parer-sacerws](https://github.com/RegioneER/parer-sacerws/releases/tag/sacerws-5.2.0)))
