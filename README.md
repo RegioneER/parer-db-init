@@ -12,7 +12,7 @@ Verranno creati nell'istanza Oracle opportunamente predisposta i seguenti schemi
 - SACER_LOG ([SacerIAM 5.2.0](https://github.com/RegioneER/parer-sacer-iam/releases/tag/saceriam-jboss-5.2.0))
 - SACER_PING ([Ping](https://github.com/RegioneER/parer-ping))
 - SACER_RIC (applicazione non presente su GitHub per il momento)
-- SACER_VERSO ([Verso](https://github.com/RegioneER/parer-verso))
+- SACER_VERSO ([Verso 2.0.0](https://github.com/RegioneER/parer-verso/releases/tag/verso-jboss-2.0.0))
 
 ## Pre requisito
 
